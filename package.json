@@ -1,0 +1,22 @@
+{
+  "name": "cucumber-playwright-typescript-project",
+  "version": "1.0.0",
+  "description": "Cucumber + Playwright + TypeScript (POM) tests for QAClickJet flight booking - Rahul Shetty Academy",
+  "scripts": {
+    "test": "cucumber-js --exit",
+    "test:headed": "cross-env HEADLESS=false SLOWMO=300 cucumber-js --exit",
+    "test:smoke": "cucumber-js --tags @smoke --exit",
+    "test:e2e": "cucumber-js --tags @e2e --exit",
+    "typecheck": "tsc --noEmit",
+    "report": "start cucumber-report.html"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.9.0",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^22.0.0",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  }
+}
